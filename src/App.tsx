@@ -13,7 +13,7 @@ export default function App() {
 
   useEffect(() => {
     console.log("Parent should be logged first");
-    setIsParentReady(true); // Forces a re-render after the console.log
+    setIsParentReady(true);
   }, []);
 
   return (
