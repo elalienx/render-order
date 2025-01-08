@@ -28,11 +28,11 @@ export default function App() {
   return (
     <div className="app">
       <h1>Parent Component</h1>
+      <p>ℹ️ Open the browser's console to see the event trigger order.</p>
       <section className="cards">
         <h2>Offer list</h2>
         <div className="grid">{Cards}</div>
       </section>
-      <hr />
       <Footer tracker={trackingManager} />
     </div>
   );

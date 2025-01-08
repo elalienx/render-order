@@ -22,7 +22,7 @@ export default function Footer({ tracker }: Props) {
   }
 
   return (
-    <footer className="Footer">
+    <footer className="footer">
       <b>Copyright 2025 Lendo AB</b>
       <small>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sit iste nihil

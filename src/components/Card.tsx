@@ -33,9 +33,7 @@ export default function Card({ item, tracker }: Props) {
   return (
     <article className="card">
       <h3>{name}</h3>
-      <p>
-        <b>Offer:</b> {amount}
-      </p>
+      <p>{amount} SEK</p>
     </article>
   );
 }
