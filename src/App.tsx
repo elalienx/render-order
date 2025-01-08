@@ -1,4 +1,5 @@
 // Project files
+import { useEffect } from "react";
 import Card from "./components/Card";
 import data from "./data/Offers.json";
 import "./styles/style.css";
@@ -6,6 +7,10 @@ import "./styles/style.css";
 export default function App() {
   // Components
   const Cards = data.map((item) => <Card key={item.id} item={item} />);
+
+  useEffect(() => {
+    console.log("Parent should be logged first");
+  }, []);
 
   return (
     <div className="app">

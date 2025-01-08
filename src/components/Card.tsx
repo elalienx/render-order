@@ -1,3 +1,5 @@
+import { useEffect } from "react";
+
 interface Props {
   item: {
     /** The name of the financial institution giving the offer. */
@@ -10,6 +12,10 @@ interface Props {
 
 export default function Card({ item }: Props) {
   const { name, amount } = item;
+
+  useEffect(() => {
+    console.log(`Child ${name}:${amount}`);
+  }, []);
 
   return (
     <article className="card">
