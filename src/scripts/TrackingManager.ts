@@ -1,6 +1,7 @@
 type EventCallback = () => void;
 
 export default class TrackingManager {
+  /** List of events to be fired once we are ready, using the order designated by the user. */
   private events: Map<number, EventCallback[]>;
 
   constructor() {
@@ -12,6 +13,7 @@ export default class TrackingManager {
     if (!this.events.has(priority)) {
       this.events.set(priority, []);
     }
+
     this.events.get(priority)!.push(callback);
   }
 
